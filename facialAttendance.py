@@ -26,3 +26,10 @@ known_face_encoding = [
     hong_encoding,
     zhao_encoding
 ]
+
+know_faces_name = [
+    "Dylan Wang",
+    "Chen Xingxu",
+    "Joshua Hong",
+    "Lusi Zhao"
+]
