@@ -35,3 +35,9 @@ know_faces_name = [
 ]
 
 students = know_faces_name.copy()
+
+face_locations = []
+face_encodings = []
+face_names = []
+s = True
+
