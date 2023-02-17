@@ -19,3 +19,10 @@ hong_encoding = face_recognition.face_encoding(hong_image)[0]
 
 zhao_image = face_recognition.load_image_file("photos/lusi.jpg")
 zhao_encoding = face_recognition.face_encoding(zhao_image)[0]
+
+known_face_encoding = [
+    wang_encoding,
+    chen_encoding,
+    hong_encoding,
+    zhao_encoding
+]
