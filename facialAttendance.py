@@ -27,14 +27,14 @@ known_face_encoding = [
     zhao_encoding
 ]
 
-know_faces_name = [
+know_faces_names = [
     "Dylan Wang",
     "Chen Xingxu",
     "Joshua Hong",
     "Lusi Zhao"
 ]
 
-students = know_faces_name.copy()
+students = know_faces_names.copy()
 
 face_locations = []
 face_encodings = []
@@ -61,4 +61,12 @@ while True:
             face_distance = face_recognition.face_distance(known_face_encoding, face_encoding)
             best_match_index = np.argmin(face_distance)
             if matches[best_match_index]:
-                name = know_faces_name[best_match_index]
+                name = know_faces_names[best_match_index]
+
+            face_names.append(name)
+            if name in know_faces_names:
+                if name in students:
+                    students.remove(name)
+                    print(students)
+                    current_time = now.strftime("%H-%M-%S")
+                    lnwriter.writerow([name, current_time])
