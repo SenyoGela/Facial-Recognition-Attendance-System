@@ -73,3 +73,7 @@ while True:
     cv2.imshow("attendance system",frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
+video_capture.release()
+cv2.destroyAllWindows()
+f.close()
