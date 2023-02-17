@@ -33,3 +33,5 @@ know_faces_name = [
     "Joshua Hong",
     "Lusi Zhao"
 ]
+
+students = know_faces_name.copy()
