@@ -41,3 +41,10 @@ face_encodings = []
 face_names = []
 s = True
 
+now = datetime.now()
+current_date = now.strftime("%Y-%m-%d"
+
+f = open(current_date+'.csv','w+',newline='')
+lnwriter = csv.writer(f)
+
+
