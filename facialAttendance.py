@@ -5,3 +5,6 @@ import csv
 import os
 import glob
 from datetime import datetime
+
+video_capture = cv2.VideoCapture(0)
+
